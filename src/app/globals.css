@@ -1,0 +1,58 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+.post-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px;
+  flex: 1 0 21%; 
+  box-sizing: border-box;
+  transition: transform 0.2s;
+}
+
+.post-card:hover {
+  transform: scale(1.05);
+}
+
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px;
+}
+
+.pagination button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #005bb5;
+}
+
+.pagination span {
+  font-size: 16px;
+}
